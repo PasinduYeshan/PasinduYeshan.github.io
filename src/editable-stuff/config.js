@@ -9,7 +9,7 @@ const mainBody = {
   firstName: "Pasindu",
   middleName: "",
   lastName: "Yeshan",
-  message: " Passionate about changing the world with technology. ",
+  message: " Creating Positive Change Through Technology.",
   icons: [
     {
       image: "fa-github",
@@ -37,7 +37,7 @@ const mainBody = {
 //b) a link to an hosted image
 //      i.e:profilePictureLink:"www.picturesonline.com/johnDoeFancyAvatar.jpg",
 //c) image in "editable-stuff" directory and use require("") to import here,
-//      i.e: profilePictureLink: require("../editable-stuff/dp.jpg"),
+//      i.e: profilePictureLink: require("../editable-stuff/img2.jpg"),
 //d) If you do not want any picture to be displayed, just leave it empty :)
 //      i.e: profilePictureLink: "",
 // For Resume either provide link to your resume or import from "editable-stuff" directory
@@ -47,7 +47,7 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/dp.jpg"),
+  imageLink: require("../editable-stuff/img2.jpg"),
   imageSize: 375,
   message:
     "I'm Pasindu Yeshan, an Undergraduate at the Computer Science and Engineering Departhment at University of Moratuwa.",
@@ -64,7 +64,7 @@ const repos = {
   heading: "Recent Projects",
   gitHubUsername: "PasinduYeshan", //i.e."johnDoe12Gh"
   reposLength: 4,
-  specificRepos: ["sinhala-metaphor-search-engine", "identity-conditional-auth-entgra"],
+  specificRepos: ["sinhala-metaphor-search-engine", "identity-conditional-auth-entgra", "ISEntgra", "union-back-end", "union-front-end", "SpotKube/SpotKube"],
 };
 
 // Leadership SECTION
@@ -75,12 +75,12 @@ const leadership = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
   images: [
     { 
-      img: require("../editable-stuff/dp.jpg"), 
+      img: require("../editable-stuff/img2.jpg"), 
       label: "First slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
     { 
-      img: require("../editable-stuff/dp.jpg"), 
+      img: require("../editable-stuff/img2.jpg"), 
       label: "Second slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
@@ -97,17 +97,27 @@ const skills = {
   heading: "Skills",
   hardSkills: [
     { name: "Python", value: 90 },
-    { name: "SQL", value: 75 },
-    { name: "Data Structures", value: 85 },
-    { name: "C/C++", value: 65 },
     { name: "JavaScript", value: 90 },
+    { name: "Java", value: 65 },
+    { name: "Dart", value: 80 },
+    { name: "PHP", value: 80 },
+    { name: "Node.js", value: 65 },
     { name: "React", value: 65 },
+    { name: "Redux", value: 65 },
+    { name: "MongoDB", value: 65 },
+    { name: "SQL", value: 75 },
+    { name: "Firebase", value: 75 },
+    { name: "Docker", value: 75 },
+    { name: "Kubernetes", value: 75 },
+    { name: "Figma", value: 75 },
+    { name: "Adobe XD", value: 75 },
+    { name: "Data Structures", value: 85 },
     { name: "HTML/CSS", value: 55 },
-    { name: "C#", value: 80 },
   ],
   softSkills: [
     { name: "Goal-Oriented", value: 80 },
     { name: "Collaboration", value: 90 },
+    { name: "Leadership", value: 75 },
     { name: "Positivity", value: 75 },
     { name: "Adaptability", value: 85 },
     { name: "Problem Solving", value: 75 },
@@ -122,8 +132,8 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
-  email: "hashirshoaeb@gmail.com",
+    "I'm currently looking for full-time Software Engineering. If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
+  email: "pasindua.18@cse.mrt.ac.lk",
 };
 
 const experiences = {
