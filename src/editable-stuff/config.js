@@ -51,7 +51,7 @@ const about = {
   imageSize: 375,
   message:
     "I'm Pasindu Yeshan, an Undergraduate at the Computer Science and Engineering Departhment at University of Moratuwa.",
-  resume: "https://drive.google.com/file/d/1QyubrSwelvNSW6_cHjg6FLDL6vnj6YKi/view?usp=share_link",
+  resume: "https://drive.google.com/file/d/1GW_zEa64XErN4o0LzlCPsAkRxK1gDDNg/view?usp=share_link",
 };
 
 // PROJECTS SECTION
