@@ -49,8 +49,7 @@ const about = {
   heading: "About Me",
   imageLink: require("../editable-stuff/img2-removebg-preview.png"),
   imageSize: 375,
-  message:
-    `I'm Pasindu Yeshan, an Undergraduate in the Computer Science and Engineering Department at the University of Moratuwa. 
+  message: `I'm Pasindu Yeshan, an Undergraduate in the Computer Science and Engineering Department at the University of Moratuwa. 
     I am a highly motivated individual with a passion for full-stack
     development, mobile application development, and DevOps. I
     am committed to giving my best in every project I undertake. I
@@ -58,7 +57,8 @@ const about = {
     commitment to continuous learning and growth in the field, I
     am always seeking out new challenges and opportunities to
     expand my skill set.`,
-  resume: "https://drive.google.com/file/d/1kuW4yTnC2qHx9D79diYX9XV6yYOTQP3l/view?usp=share_link",
+  resume:
+    "https://drive.google.com/file/d/1kuW4yTnC2qHx9D79diYX9XV6yYOTQP3l/view?usp=share_link",
 };
 
 // PROJECTS SECTION
@@ -66,12 +66,37 @@ const about = {
 //      i.e: reposLength: 0,
 // If you want to display specfic projects, add the repository names,
 //      i.e ["repository-1", "repo-2"]
+
+const projects = {
+  show: true,
+  heading: "Projects",
+  projectArray: [
+  {
+    id: 1,
+    title: `SpotKube: Cost Optimization of Microservices-based application in a Hybrid Cloud Environment (Final Year
+    Project)`,
+    description: `SpotKube is a cost optimization tool for microservices-based applications in a hybrid cloud 
+    environment. It analyze the characteristics of microservice-based applications and provide the best cost-optimal 
+    deployment configuration to the container orchestration platform.`,
+    technologies: ["Go", "Kubernetes", "Docker", "Terraform"],
+    started_at: "September 2022",
+    ended_at: "Present",
+  },
+]};
+
 const repos = {
   show: true,
   heading: "Recent Projects",
   gitHubUsername: "PasinduYeshan", //i.e."johnDoe12Gh"
   reposLength: 4,
-  specificRepos: ["sinhala-metaphor-search-engine", "identity-conditional-auth-entgra", "ISEntgra", "union-back-end", "union-front-end", "SpotKube/SpotKube"],
+  specificRepos: [
+    "sinhala-metaphor-search-engine",
+    "identity-conditional-auth-entgra",
+    "ISEntgra",
+    "union-back-end",
+    "union-front-end",
+    "SpotKube/SpotKube",
+  ],
 };
 
 // Leadership SECTION
@@ -81,21 +106,21 @@ const leadership = {
   message:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
   images: [
-    { 
-      img: require("../editable-stuff/img2-removebg-preview.png"), 
-      label: "First slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
+    {
+      img: require("../editable-stuff/img2-removebg-preview.png"),
+      label: "First slide label",
+      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
     },
-    { 
-      img: require("../editable-stuff/img2-removebg-preview.png"), 
-      label: "Second slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
+    {
+      img: require("../editable-stuff/img2-removebg-preview.png"),
+      label: "Second slide label",
+      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
     },
   ],
   imageSize: {
-    width:"615",
-    height:"450"
-  }
+    width: "615",
+    height: "450",
+  },
 };
 
 // SKILLS SECTION
@@ -148,21 +173,31 @@ const experiences = {
   heading: "Experiences",
   data: [
     {
-      role: 'Software Engineer',// Here Add Company Name
-      companylogo: require('../assets/img/dell.png'),
-      date: 'June 2018 – Present',
+      role: "Software Engineer", // Here Add Company Name
+      companylogo: require("../assets/img/dell.png"),
+      date: "June 2018 – Present",
     },
     {
-      role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
+      role: "Front-End Developer",
+      companylogo: require("../assets/img/boeing.png"),
+      date: "May 2017 – May 2018",
     },
-  ]
-}
+  ],
+};
 
 // Blog SECTION
 // const blog = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
+export {
+  navBar,
+  mainBody,
+  about,
+  repos,
+  skills,
+  leadership,
+  getInTouch,
+  experiences,
+  projects
+};
