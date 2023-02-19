@@ -12,6 +12,7 @@ const CustomProjectCard = ({ value }) => {
     ended_at,
     technologies,
     project_urls,
+    subtitle
   } = value;
   return (
     <Col md={6}>
@@ -20,6 +21,9 @@ const CustomProjectCard = ({ value }) => {
           <Card.Title as="h5" className="pb-2">
             {title || <Skeleton />}{" "}
           </Card.Title>
+          { subtitle ? (<Card.Text className="">
+            {subtitle || <Skeleton />}{" "}
+          </Card.Text>) : ""}
           <Card.Text>
             {!description ? "" : description || <Skeleton count={3} />}{" "}
           </Card.Text>

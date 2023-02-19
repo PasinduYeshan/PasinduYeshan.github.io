@@ -58,7 +58,7 @@ const about = {
     am always seeking out new challenges and opportunities to
     expand my skill set.`,
   resume:
-    "https://drive.google.com/file/d/1kuW4yTnC2qHx9D79diYX9XV6yYOTQP3l/view?usp=share_link",
+    "https://drive.google.com/file/d/1_rgNJf7XjfKVU219dxM1Dg_N7eQdcpm5/view?usp=share_link",
 };
 
 // PROJECTS SECTION
@@ -71,27 +71,108 @@ const projects = {
   show: true,
   heading: "Projects",
   projectArray: [
-  {
-    id: 1,
-    title: `SpotKube: Cost Optimization of Microservices-based application in a Hybrid Cloud Environment (Final Year
+    {
+      id: 1,
+      title: `SpotKube: Cost Optimization of Microservices-based application in a Hybrid Cloud Environment (Final Year
     Project)`,
-    description: `SpotKube is a cost optimization tool for microservices-based applications in a hybrid cloud 
+      subtitle: "Final Year Project",
+      description: `SpotKube is a cost optimization tool for microservices-based applications in a hybrid cloud 
     environment. It analyze the characteristics of microservice-based applications and provide the best cost-optimal 
     deployment configuration to the container orchestration platform.`,
-    technologies: ["Go", "Kubernetes", "Docker", "Terraform"],
-    started_at: "September 2022",
+      technologies: ["Go", "Kubernetes", "Docker", "Terraform"],
+      started_at: "September 2022",
       ended_at: "Present",
       project_urls: [
         {
           label: "GitHub",
-          url: "https://github.com/SpotKube/SpotKube"
-      }
-    ]
-  },
-]};
+          url: "https://github.com/SpotKube/SpotKube",
+        },
+      ],
+    },
+    {
+      title: `Indoor Navigation App`,
+      subtitle: "Undergraduate mobile computing project",
+      description: `As a member of a dynamic two-person team, I had the opportunity to contribute to the development 
+      of a cutting-edge mobile AR app that provides users with seamless navigation within indoor premises. 
+      Our app utilized state-of-the-art camera and AR technology to guide users towards locations of interest, 
+      making it easy and intuitive for them to search for and find their way around. As a team, we were able to 
+      leverage our combined skills and knowledge to create an app that delivers an immersive and engaging user experience, 
+      from the initial design stage to final implementation. `,
+      technologies: ["Unity", "ArCore", "Firebase"],
+      started_at: "February 2023",
+      ended_at: "Present",
+      project_urls: [
+        {
+          label: "GitHub",
+          url: "https://github.com/PasinduYeshan/indoor-nav/tree/main",
+        },
+      ],
+    },
+    {
+      title: `Stated Choice Survey Creator`,
+      subtitle: "Freelancing project",
+      description: `As a member of a dynamic two-person team, I had the opportunity to contribute to the development 
+      of a cutting-edge mobile AR app that provides users with seamless navigation within indoor premises. 
+      Our app utilized state-of-the-art camera and AR technology to guide users towards locations of interest, 
+      making it easy and intuitive for them to search for and find their way around. As a team, we were able to 
+      leverage our combined skills and knowledge to create an app that delivers an immersive and engaging user experience, 
+      from the initial design stage to final implementation. `,
+      technologies: ["React", "Node.js"],
+      started_at: "November 2022",
+      ended_at: "Present",
+      project_urls: [
+        {
+          label: "Link",
+          url: "https://www.statedchoice.com/login",
+        },
+      ],
+    },
+    {
+      title: `Sinhala Songs & Metaphor Search Engine`,
+      description: `I have developed a robust Sinhala songs and metaphor search engine that offers advanced search capabilities, 
+      including full-text search, faceted search, and synonym searching. This project incorporates boosting techniques 
+      to improve the relevance of search results and ensure users can quickly find the most relevant songs to their query.
+      The search engine is optimized to handle a large database of Sinhala songs and delivers fast and accurate search 
+      results, making it an excellent tool for anyone looking to discover and explore the rich and diverse world of 
+      Sinhala music. As part of this project, I have also implemented a user-friendly interface, making it easy for 
+      users to navigate and explore search results. The search engine is scalable and can be easily adapted to include additional search
+      features and functionality.`,
+      technologies: ["React", "Node.js", "ElasticSearch"],
+      started_at: "December 2022",
+      ended_at: "January 2023",
+      project_urls: [
+        {
+          label: "GitHub",
+          url: "https://github.com/PasinduYeshan/sinhala-metaphor-search-engine",
+        },
+      ],
+    },
+    {
+      title: `Device - User linking & Device Attribute-Based Authentication`,
+      subtitle: "Intern project",
+      description: `Nowadays, offering a mobile application for any software solution has become a modern-day necessity. 
+      Our goal is to secure the user by considering the security aspects of mobile devices, and based on this device
+      information we can decide to authenticate the user with minimal steps, improving the user experience or step up
+      or even block access if the device is in an unsecured state. `,
+      technologies: ["Java", "React Native", "Maven", "OSGi"],
+      started_at: "December 2021",
+      ended_at: "August 2022",
+      project_urls: [
+        {
+          label: "Connector",
+          url: "https://github.com/wso2-extensions/identity-conditional-auth-entgra",
+        },
+        {
+          label: "Application",
+          url: "https://github.com/PasinduYeshan/ISEntgra",
+        },
+      ],
+    },
+  ],
+};
 
 const repos = {
-  show: true,
+  show: false,
   heading: "Recent Projects in GitHub",
   gitHubUsername: "PasinduYeshan", //i.e."johnDoe12Gh"
   reposLength: 4,
@@ -205,5 +286,5 @@ export {
   leadership,
   getInTouch,
   experiences,
-  projects
+  projects,
 };
