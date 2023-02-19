@@ -37,7 +37,7 @@ const mainBody = {
 //b) a link to an hosted image
 //      i.e:profilePictureLink:"www.picturesonline.com/johnDoeFancyAvatar.jpg",
 //c) image in "editable-stuff" directory and use require("") to import here,
-//      i.e: profilePictureLink: require("../editable-stuff/img2.jpg"),
+//      i.e: profilePictureLink: require("../editable-stuff/img2-removebg-preview.png"),
 //d) If you do not want any picture to be displayed, just leave it empty :)
 //      i.e: profilePictureLink: "",
 // For Resume either provide link to your resume or import from "editable-stuff" directory
@@ -47,11 +47,18 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/img2.jpg"),
+  imageLink: require("../editable-stuff/img2-removebg-preview.png"),
   imageSize: 375,
   message:
-    "I'm Pasindu Yeshan, an Undergraduate at the Computer Science and Engineering Departhment at University of Moratuwa.",
-  resume: "https://drive.google.com/file/d/1GW_zEa64XErN4o0LzlCPsAkRxK1gDDNg/view?usp=share_link",
+    `I'm Pasindu Yeshan, an Undergraduate in the Computer Science and Engineering Department at the University of Moratuwa. 
+    I am a highly motivated individual with a passion for full-stack
+    development, mobile application development, and DevOps. I
+    am committed to giving my best in every project I undertake. I
+    thrive on collaboration and enjoy working in teams with a
+    commitment to continuous learning and growth in the field, I
+    am always seeking out new challenges and opportunities to
+    expand my skill set.`,
+  resume: "https://drive.google.com/file/d/1kuW4yTnC2qHx9D79diYX9XV6yYOTQP3l/view?usp=share_link",
 };
 
 // PROJECTS SECTION
@@ -75,12 +82,12 @@ const leadership = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
   images: [
     { 
-      img: require("../editable-stuff/img2.jpg"), 
+      img: require("../editable-stuff/img2-removebg-preview.png"), 
       label: "First slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
     { 
-      img: require("../editable-stuff/img2.jpg"), 
+      img: require("../editable-stuff/img2-removebg-preview.png"), 
       label: "Second slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
