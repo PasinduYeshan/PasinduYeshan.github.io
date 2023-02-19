@@ -8,13 +8,10 @@ const CustomProjectCard = ({ value }) => {
   const {
     title,
     description,
-    svn_url,
-    stargazers_count,
-    languages_url,
-    pushed_at,
     started_at,
     ended_at,
     technologies,
+    project_urls,
   } = value;
   return (
     <Col md={6}>
@@ -26,9 +23,9 @@ const CustomProjectCard = ({ value }) => {
           <Card.Text>
             {!description ? "" : description || <Skeleton count={3} />}{" "}
           </Card.Text>
-          {/* {svn_url ? <CardButtons svn_url={svn_url} /> : <Skeleton count={2} />} */}
           <hr />
           <Technologies technologies={technologies} />
+          {project_urls ? <CardButtons project_urls={project_urls} /> : ""}
           {value ? (
             <CardFooter started_at={started_at} ended_at={ended_at} />
           ) : (
@@ -40,22 +37,20 @@ const CustomProjectCard = ({ value }) => {
   );
 };
 
-const CardButtons = ({ svn_url }) => {
+const CardButtons = ({ project_urls }) => {
   return (
-    <div className="d-grid gap-2 d-md-block">
-      <a
-        href={`${svn_url}/archive/master.zip`}
-        className="btn btn-outline-secondary mx-2"
-      >
-        <i className="fab fa-github" /> Clone Project
-      </a>
-      <a
-        href={svn_url}
-        target=" _blank"
-        className="btn btn-outline-secondary mx-2"
-      >
-        <i className="fab fa-github" /> Repo
-      </a>
+    <div className="d-grid gap-2 d-md-block py-2">
+      {project_urls.length > 0
+        ? project_urls.map((url) => (
+            <a
+              href={`${url.url}`}
+              className="btn btn-outline-secondary mx-2"
+              target="_blank"
+            >
+              <i className="fab fa-github" /> {url.label}
+            </a>
+          ))
+        : ""}
     </div>
   );
 };

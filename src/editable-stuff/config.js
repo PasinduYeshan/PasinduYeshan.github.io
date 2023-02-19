@@ -80,13 +80,19 @@ const projects = {
     deployment configuration to the container orchestration platform.`,
     technologies: ["Go", "Kubernetes", "Docker", "Terraform"],
     started_at: "September 2022",
-    ended_at: "Present",
+      ended_at: "Present",
+      project_urls: [
+        {
+          label: "GitHub",
+          url: "https://github.com/SpotKube/SpotKube"
+      }
+    ]
   },
 ]};
 
 const repos = {
   show: true,
-  heading: "Recent Projects",
+  heading: "Recent Projects in GitHub",
   gitHubUsername: "PasinduYeshan", //i.e."johnDoe12Gh"
   reposLength: 4,
   specificRepos: [
