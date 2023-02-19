@@ -5,7 +5,7 @@ const repoURL = "https://github.com/PasinduYeshan/PasinduYeshan.github.io";
 ghpages.publish(
   pathname,
   {
-    branch: "main",
+    branch: "master",
     repo: repoURL,
   },
   (err) => {
